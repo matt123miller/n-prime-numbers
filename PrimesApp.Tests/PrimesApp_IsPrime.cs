@@ -13,14 +13,18 @@ namespace PrimesApp.Tests
         }
 
         #region LessThanTwo
-        [Fact]
-        public void ReturnFalseGivenValueLessThanTwo()
+        [Theory]
+        [InlineData(-1)]
+        [InlineData(0)]
+        [InlineData(1)]
+        public void ReturnFalseGivenValueLessThanTwo(int value)
         {
-            //Given
-            var result = _primes.IsPrime(1);
             //When
-            Assert.False(result, "1 should not be prime");
+            var result = _primes.IsPrime(value);
             //Then
+            // I forgot they added new string interpolation sugar. 
+            // Not sure how I feel about the dollar prefix though.
+            Assert.False(result, $"{value}should not be prime");
         }
         #endregion
     }
