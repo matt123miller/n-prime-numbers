@@ -9,10 +9,12 @@ namespace PrimesApp.Tests
 
         public PrimesApp_IsPrime()
         {
+            // I'm not sure if this is proper TDD practice,
+            // I feel like you're meant to start fresh in every test function.
+            // But I'm creating the Primes object once and reusing it.
             _primes = new Primes();
         }
 
-        #region LessThanTwo
         [Theory]
         [InlineData(-1)]
         [InlineData(0)]
@@ -22,13 +24,9 @@ namespace PrimesApp.Tests
             //When
             var result = _primes.IsPrime(value);
             //Then
-            // I forgot they added new string interpolation sugar. 
-            // Not sure how I feel about the dollar prefix though.
             Assert.False(result, $"{value}should not be prime");
         }
-        #endregion
 
-        #region PrimesLessThanTen
         [Theory] 
         [InlineData(2)] 
         [InlineData(3)] 
@@ -36,13 +34,12 @@ namespace PrimesApp.Tests
         [InlineData(7)] 
         public void ReturnTrueGivenPrimesLessThan10(int value) 
         { 
+            //When
             var result = _primes.IsPrime(value); 
- 
+            //Then
             Assert.True(result, $"{value} should be prime"); 
         } 
-        #endregion
  
-        #region NonPrimesLessThanTen
         [Theory] 
         [InlineData(4)] 
         [InlineData(6)] 
@@ -50,10 +47,10 @@ namespace PrimesApp.Tests
         [InlineData(9)] 
         public void ReturnFalseGivenNonPrimesLessThan10(int value) 
         { 
+            //When
             var result = _primes.IsPrime(value); 
- 
+            //Then
             Assert.False(result, $"{value} should not be prime"); 
         } 
-        #endregion
     }
 }
