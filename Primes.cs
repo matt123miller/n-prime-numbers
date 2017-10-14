@@ -6,7 +6,7 @@ namespace n_prime_numbers
     class Primes{
 
         Primes(){
-            print("Lets make some primes!");
+            Console.WriteLine("Lets make some primes!");
         }
 
         public int[] FindPrimes(int n) {

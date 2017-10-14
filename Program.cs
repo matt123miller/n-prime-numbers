@@ -9,7 +9,11 @@ namespace n_prime_numbers
             Console.WriteLine("Hello World!");
 
             var primeFinder = Primes();
-            int[] primes = primeFinder.FindPrimes()
+            var gridRenderer = GridRender();
+
+            int[] primes = primeFinder.FindPrimes(100);
+            string grid = gridRenderer.Render(primes);
+            Console.WriteLine(grid);
         }
     }
 }
