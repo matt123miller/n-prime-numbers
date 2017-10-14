@@ -27,5 +27,33 @@ namespace PrimesApp.Tests
             Assert.False(result, $"{value}should not be prime");
         }
         #endregion
+
+        #region PrimesLessThanTen
+        [Theory] 
+        [InlineData(2)] 
+        [InlineData(3)] 
+        [InlineData(5)] 
+        [InlineData(7)] 
+        public void ReturnTrueGivenPrimesLessThan10(int value) 
+        { 
+            var result = _primes.IsPrime(value); 
+ 
+            Assert.True(result, $"{value} should be prime"); 
+        } 
+        #endregion
+ 
+        #region NonPrimesLessThanTen
+        [Theory] 
+        [InlineData(4)] 
+        [InlineData(6)] 
+        [InlineData(8)] 
+        [InlineData(9)] 
+        public void ReturnFalseGivenNonPrimesLessThan10(int value) 
+        { 
+            var result = _primes.IsPrime(value); 
+ 
+            Assert.False(result, $"{value} should not be prime"); 
+        } 
+        #endregion
     }
 }
