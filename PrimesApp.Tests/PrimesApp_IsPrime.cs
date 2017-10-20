@@ -1,5 +1,6 @@
 using Xunit;
 using PrimesApp;
+using System;
 
 namespace PrimesApp.Tests
 {
@@ -19,7 +20,7 @@ namespace PrimesApp.Tests
         [InlineData(-1)]
         [InlineData(0)]
         [InlineData(1)]
-        public void ReturnFalseGivenValueLessThanTwo(int value)
+        public void ValuesLessThanTwo(int value)
         {
             //When
             var result = _primes.IsPrime(value);
@@ -32,7 +33,7 @@ namespace PrimesApp.Tests
         [InlineData(3)] 
         [InlineData(5)] 
         [InlineData(7)] 
-        public void ReturnTrueGivenPrimesLessThan10(int value) 
+        public void PrimesLessThan10(int value) 
         { 
             //When
             var result = _primes.IsPrime(value); 
@@ -45,7 +46,7 @@ namespace PrimesApp.Tests
         [InlineData(6)] 
         [InlineData(8)] 
         [InlineData(9)] 
-        public void ReturnFalseGivenNonPrimesLessThan10(int value) 
+        public void NonPrimesLessThan10(int value) 
         { 
             //When
             var result = _primes.IsPrime(value); 
@@ -53,15 +54,15 @@ namespace PrimesApp.Tests
             Assert.False(result, $"{value} should not be prime"); 
         } 
 
-        // [Theory] 
-        // [InlineData(10)] 
-        // [InlineData(100)] 
-        // // [InlineData(500)]
-        // public void DebugRunning(int value) 
-        // { 
-        //     //When
-        //     var result = _primes.FindPrimes(value); 
-
-        // }
+        [Theory] 
+        [InlineData(10)] 
+        [InlineData(20)] 
+        [InlineData(500)]
+        public void DebugRunning(int value) 
+        { 
+            //When
+            var result = _primes.FindPrimes(value); 
+            Console.WriteLine(result);
+        }
     }
 }

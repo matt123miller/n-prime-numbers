@@ -9,30 +9,24 @@ namespace PrimesApp
 
         }
 
+        /// Find the first n prime numbers
         public int[] FindPrimes(int n) {
 
-            var primes = new int[5];
+            var primes = new int[n];
 
             // The magic goes in the middle here.
-            // Find the first n prime numbers
 
-            bool isPrime = true;
             // Start at 2, 0 and 1 aren't prime numbers
-            for(int i = 0; i <= primes.Length; i++){
+            for(int i = 0; i <= primes.Length - 1; i++){
                 // Maybe start all loops from the previous found prime number? 
                 // Therefor you can skip all previous attempts.
-                for (int j = 2; j <= int.MaxValue; j++)
-                {
-                    for (int k = 2; k <= int.MaxValue; k++)
-                    {
-                        // This bit broken out into method? Or the j/k loops?
-                        if(i != j && i % j == 0){
-                            isPrime = false;
-                            break;
-                        }
-                        if(!isPrime)
-                            Console.WriteLine("wasn't prime, did break get here?");
 
+                for (int j = 2; j <= 1000; j++)
+                {
+                    var result = IsPrime(j);
+                    if (result){
+                        Console.WriteLine(i + " " + j);
+                        // break;
                     }
                 }  
             }
@@ -40,19 +34,22 @@ namespace PrimesApp
             return primes;
         }
 
-        public bool IsPrime(int candidate) 
+        public bool IsPrime(int number) 
         {
-            if (candidate < 2)
+            // Skip the initial fails.
+            if (number < 2)
             {
                 return false;
             }
-            // This is obviously not clever. 
-            // But it passes the tests before I start writing proper prime finding!
-            if(candidate == 2 || candidate == 3 || candidate == 5 || candidate == 7)
-            {
-                return true;
-            }
-            return false;
+            
+            for (var moduloNumber = 2; moduloNumber <= Math.Sqrt(number); moduloNumber++) 
+            { 
+                if (number % moduloNumber == 0) 
+                { 
+                    return false; 
+                } 
+            } 
+            return true; 
 
             throw new NotImplementedException("Please return something before this point.");
         }

@@ -19,13 +19,10 @@ namespace PrimesApp.Tests
         { 
             //When
             int[] values = {1,2,3,4,5};
-            var result = _renderer.Render(values);
             var knownTable = "table string";
+            var result = _renderer.Render(values);
             //Then
-            foreach (var item in values)
-            {
-                Console.WriteLine(item);
-            }
+            Console.WriteLine(result);
             // Later validate the result against a known correct table string.
             // Assert.True(result == knownTable, $"The rendered grid and known grid match for input {values}");
         } 

@@ -19,7 +19,7 @@ namespace PrimesApp
 
         public GridRender()
         {
-
+            
         }
 
         // Typically I'd use a StringBuilder in C# because repeatedly appending strings 
@@ -30,7 +30,7 @@ namespace PrimesApp
             Console.WriteLine("Preparing render.....");
 
             
-            
+
             return "A nice rendered grid";
         }
     }
