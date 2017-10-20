@@ -10,10 +10,15 @@ This is a .net core project that generates and input `n` prime numbers. I'm usin
  - Installing the project?? Check the .NET Core docs.
  - Open a terminal to this projects directory
  - Run `dotnet test` to validate that the tests all pass. They should!
- 
+
 ## Notes:
+
  - I remember reading about a ~~mendel sieve~~ [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) algorithm, maybe that's appropriate?
  - Write tests first, then write the minimum code required to pass that test.
     - This means adding things like checking for the right sort of input etc. comes AFTER writing the tests for business logic and the code that passes the test.
  - The [Fact] attribute is cool for the Xunit testing library, but [Theory] is cooler!
  - What's a good way to find up to 20,000 primes, per the requirements, without putting the business logic in the tests? Would the code required to make writing tests easier make normal business logic harder to write?
+
+It currently generates up to 20,000 prime numbers! 
+
+![](./20k-numbers.png?raw=true)
