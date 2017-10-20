@@ -30,6 +30,7 @@ namespace PrimesApp
             Console.WriteLine("Preparing render.....");
 
             
+            
             return "A nice rendered grid";
         }
     }
