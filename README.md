@@ -19,6 +19,10 @@ This is a .net core project that generates and input `n` prime numbers. I'm usin
  - The [Fact] attribute is cool for the Xunit testing library, but [Theory] is cooler!
  - What's a good way to find up to 20,000 primes, per the requirements, without putting the business logic in the tests? Would the code required to make writing tests easier make normal business logic harder to write?
 
+ - When rendering a grid of 20,000 prime numbers StringBuilder reaches 4GB of memory before the program crashes. 
+ `Error Message: System.OutOfMemoryException : Insufficient memory to continue the execution of the program.`
+ - Compare against the other text writing options.
+
 It currently generates up to 20,000 prime numbers! 
 
 ![](./20k-numbers.png?raw=true)

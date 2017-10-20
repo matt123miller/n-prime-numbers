@@ -54,14 +54,14 @@ namespace PrimesApp.Tests
             Assert.False(result, $"{value} should not be prime"); 
         } 
 
-        [Theory] 
-        [InlineData(20000)]
-        public void DebugRunning(int value) 
-        { 
-            Console.WriteLine($"Testing for the first {value} prime numbers.");
-            //When
-            var result = _primes.FindPrimes(value); 
-            Console.WriteLine(result);
-        }
+        // [Theory] 
+        // [InlineData(20000)]
+        // public void DebugRunning(int value) 
+        // { 
+        //     Console.WriteLine($"Testing for the first {value} prime numbers.");
+        //     //When
+        //     var result = _primes.FindPrimes(value); 
+        //     Console.WriteLine(result);
+        // }
     }
 }

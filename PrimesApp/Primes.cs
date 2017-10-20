@@ -18,7 +18,7 @@ namespace PrimesApp
 
             int previousPrime = primes[0];
             // Start at 2, 0 and 1 aren't prime numbers
-            for(int i = 0; i <= primes.Length - 1; i++){
+            for(int i = 0; i < primes.Length; i++){
                 // Maybe start all loops from the previous found prime number? 
                 // Therefor you can skip all previous attempts.
 
@@ -26,7 +26,6 @@ namespace PrimesApp
                 {
                     if (IsPrime(j))
                     {
-                        Console.WriteLine(i + " " + j);
                         primes[i] = j;
                         break;
                     }
