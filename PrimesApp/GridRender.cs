@@ -2,6 +2,9 @@ using System;
 using System.Collections;
 
 // The application should output an N+1 x N+1 grid of numbers
+// Remember I need to generate 20,000+ prime numbers, 
+// whatever grid I create won't satisfactorily fit in a terminal window. 
+// I could write it to a csv file afterwards so it's atleast viewable?
 
 // Example primes multiplication table when N is 3
 

@@ -55,11 +55,10 @@ namespace PrimesApp.Tests
         } 
 
         [Theory] 
-        [InlineData(10)] 
-        [InlineData(20)] 
-        [InlineData(500)]
+        [InlineData(20000)]
         public void DebugRunning(int value) 
         { 
+            Console.WriteLine($"Testing for the first {value} prime numbers.");
             //When
             var result = _primes.FindPrimes(value); 
             Console.WriteLine(result);
