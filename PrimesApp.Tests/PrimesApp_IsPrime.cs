@@ -52,5 +52,16 @@ namespace PrimesApp.Tests
             //Then
             Assert.False(result, $"{value} should not be prime"); 
         } 
+
+        // [Theory] 
+        // [InlineData(10)] 
+        // [InlineData(100)] 
+        // // [InlineData(500)]
+        // public void DebugRunning(int value) 
+        // { 
+        //     //When
+        //     var result = _primes.FindPrimes(value); 
+
+        // }
     }
 }
