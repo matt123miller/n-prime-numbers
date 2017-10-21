@@ -51,6 +51,8 @@ namespace PrimesApp
             }
             // Insert an end character then the default line terminator for the environment 
             sb.AppendLine(end);
+            Console.WriteLine(sb.ToString());
+            //sb.Clear();
 
             // Then write all the grid below it. Now I don't have to worry about that empty square in the top left
             for (int i = 0; i < primes.Length; i++)
@@ -69,11 +71,13 @@ namespace PrimesApp
                 }
                 // Insert an end character then the default line terminator for the environment 
                 sb.AppendLine(end);
+                Console.WriteLine(sb.ToString());
+                sb.Clear();
             }
 
-            string grid = sb.ToString();
+            //string grid = sb.ToString();
 
-            return grid;
+            return "";
         }
     }
 }
