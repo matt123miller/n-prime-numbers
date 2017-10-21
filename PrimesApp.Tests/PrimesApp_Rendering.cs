@@ -22,7 +22,7 @@ namespace PrimesApp.Tests
         { 
             //When
             int[] primes = _primeFinder.FindPrimes(value);
-            var result = _renderer.Render(primes);
+            var result = _renderer.Output(primes);
             var knownTable = "table string";
             //Then
             Console.WriteLine(result);
@@ -37,7 +37,7 @@ namespace PrimesApp.Tests
         { 
             //When
             int[] primes = _primeFinder.FindPrimes(value);
-            var result = _renderer.Render(primes);
+            var result = _renderer.Output(primes);
             var knownTable = "table string";
             //Then
             Console.WriteLine(result);
@@ -51,7 +51,7 @@ namespace PrimesApp.Tests
         { 
             //When
             int[] primes = _primeFinder.FindPrimes(value);
-            var result = _renderer.Render(primes);
+            var result = _renderer.Output(primes);
             var knownTable = "table string";
             //Then
             Console.WriteLine(result);
@@ -66,7 +66,7 @@ namespace PrimesApp.Tests
         // { 
         //     //When
         //     int[] primes = _primeFinder.FindPrimes(value);
-        //     var result = _renderer.Render(primes);
+        //     var result = _renderer.Output(primes);
         //     var knownTable = "table string";
         //     //Then
         //     Console.WriteLine(result);

@@ -3,11 +3,12 @@
 ## Introduction 
 This is a .net core project that given the input `n` will generate the first `n` prime numbers. I'm using .NET Core as I've been meaning to learn it since it was released a few years ago. All my previous C# experience has been using old ASP.NET or for games, so this should be interesting. It will also allow me to learn more about unit testing.
 
+This project took me at most 8 hours, spread out over 3 days. A lot of those hours were just learning about .NET Core, configuring the project project files and Unit Testing, all of which I can see making it's way into other projects I create in the future.
+
 ## Installation
 
  - Download .NET Core for your prefered operating system [from here](https://www.microsoft.com/net/core).
  - Clone the repo to your machine.
- - Installing the project?? Check the .NET Core docs.
  - Open a terminal to this projects directory
  - Run `dotnet test` to validate that the tests all pass. They should!
 
