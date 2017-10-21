@@ -6,7 +6,7 @@ namespace PrimesApp
     {
         public Primes()
         {
-
+            Console.WriteLine("Hello world");
         }
 
         /// Find the first n prime numbers

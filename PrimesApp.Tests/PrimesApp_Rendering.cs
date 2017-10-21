@@ -60,19 +60,19 @@ namespace PrimesApp.Tests
         } 
 
             
-        [Theory]
-        [InlineData(20000)]
-        public void ProductionGrid(int value) 
-        { 
-            //When
-            int[] primes = _primeFinder.FindPrimes(value);
-            var result = _renderer.Render(primes);
-            var knownTable = "table string";
-            //Then
-            Console.WriteLine(result);
-            // Later validate the result against a known correct table string.
-            // Assert.True(result == knownTable, $"The rendered grid and known grid match for input {values}");
-        } 
+        // [Theory]
+        // [InlineData(20000)]
+        // public void ProductionGrid(int value) 
+        // { 
+        //     //When
+        //     int[] primes = _primeFinder.FindPrimes(value);
+        //     var result = _renderer.Render(primes);
+        //     var knownTable = "table string";
+        //     //Then
+        //     Console.WriteLine(result);
+        //     // Later validate the result against a known correct table string.
+        //     // Assert.True(result == knownTable, $"The rendered grid and known grid match for input {values}");
+        // } 
         
         // Add some tests with purposefully failing grids.
     }
