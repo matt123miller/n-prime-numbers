@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimesApp", "PrimesApp\PrimesApp.csproj", "{52E4C0C9-776D-4798-9C76-FF6720F08A3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimesApp.Library", "PrimesApp.Library\PrimesApp.Library.csproj", "{52E4C0C9-776D-4798-9C76-FF6720F08A3F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimesApp.Tests", "PrimesApp.Tests\PrimesApp.Tests.csproj", "{896B86BA-7806-4ED9-B409-8D945CA0D824}"
 EndProject

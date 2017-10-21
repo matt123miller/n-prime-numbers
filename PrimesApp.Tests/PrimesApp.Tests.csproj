@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PrimesApp\PrimesApp.csproj" />
+    <ProjectReference Include="..\PrimesApp.Library\PrimesApp.Library.csproj" />
   </ItemGroup>
 
 </Project>
