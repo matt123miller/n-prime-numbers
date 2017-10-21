@@ -26,3 +26,7 @@ This is a .net core project that generates and input `n` prime numbers. I'm usin
 It currently generates up to 20,000 prime numbers! 
 
 ![](./20k-numbers.png?raw=true)
+
+Here's a gif of the program working on printing the first 20,000 primes.
+
+[![https://gyazo.com/acff70ff008219f085926d880d4cea13](https://i.gyazo.com/acff70ff008219f085926d880d4cea13.gif)](https://gyazo.com/acff70ff008219f085926d880d4cea13)
