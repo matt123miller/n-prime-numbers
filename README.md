@@ -21,6 +21,14 @@ This project took me at most 8 hours, spread out over 3 days. A lot of those hou
     - This is preferable when `NUMBER` is greater than 20 because terminal output starts to get garbled after that. 
     - The CSV output is also much faster to execute because printing out `NUMBER` lines to the terminal quickly starts to slow down.
 
+## What am I happy with?
+
+I enjoyed working with .NET Core in this project and learning about Unit Testing. I think the code is clear in it's intent and syntax. I also really like the separation of the library, console and tests projects. It was a bit fiddly but I knew it would be worth putting in the time to do so. I really live the CsvSaver.cs file (though maybe not it's name) as I think it's elegant in it's use of LINQ and String.Join to simplify the creation of rows. That's something I'll be reusing again in the future.
+
+## What am I unhappy with?
+
+I'm unhappy with my unit testing practices. This is the first project where I've used them outside of a hello world, and whilst I've read about or listened to podcasts at length about their value and uses I know that I could do a far better job with more experience. The biggest offender is the PrimesApp_Rendering.cs class because it doesn't actually test and returned output. The problem is I couldn't come up with a way to render up to 20,000 primes in a grid AND return it all in 1 string due to running out of memory. My approach was to print each row of the grid as it was finished but this isn't testable. I considered return an array of strings, each element being a row, but it still has the same problem. All I can think of is creating separate methods for rendering big grids that isn't testable and smaller grids that is testable and calling the appropriate one in business logic. But this results in needless repeated code which isn't desirable. I'm going to think about how I could overcome this for a few days and maybe update it, but for now I'm not happy with it.
+
 ## Output
 
 It currently generates up to 20,000 prime numbers in no time at all.  
