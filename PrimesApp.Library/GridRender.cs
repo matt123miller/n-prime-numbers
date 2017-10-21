@@ -19,7 +19,7 @@ using System.Text;
 
 namespace PrimesApp.Library
 {
-    public class GridRender{
+    public class GridRender : IPrimeOutput {
 
         public GridRender()
         {
@@ -30,7 +30,8 @@ namespace PrimesApp.Library
         // creates lots of extra memory that has to be collected. But .NET Core, being web favourable, 
         // also offers a new System.Text.Formatting API that allocates even less memory.
         // I'll use both and compare the results. https://github.com/dotnet/corefxlab/wiki/System.Text.Formatting
-        public string Render(int[] primes){
+        public string Output(int[] primes)
+        {
             Console.WriteLine("Preparing render.....");
 
             string beginning = "| ";
@@ -79,5 +80,7 @@ namespace PrimesApp.Library
 
             return "";
         }
+
+        
     }
 }
