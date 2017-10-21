@@ -7,8 +7,25 @@ namespace PrimesAppConsole
     {
         static void Main(string[] args)
         {
-            int primeCount = int.Parse(args[0]);
+            int primeCount = 0;
 
+            // A little sanity testing.
+            try {
+                primeCount = Int32.Parse(args[0]); 
+            }
+            catch (FormatException) {
+                Console.WriteLine($"{args[0]}: Bad Format");
+                return;
+            }   
+            catch (OverflowException) {
+                Console.WriteLine($"{args[0]}: Overflow");   
+                return;
+            }  
+
+            if(primeCount < 1){
+                Console.WriteLine("Please enter an integer greater than 0");
+                return;
+            }
 
             // The required objects
             var primeFinder = new Primes();
@@ -21,9 +38,17 @@ namespace PrimesAppConsole
 
             // What to do with the primes though?
             // Coding against an interface really is lovely.
-            if(args.Length > 1 && args[1] == "-csv")
+            if(args.Length > 1)
             {
-                outputGenerator = new CsvSaver();
+                if (args[1] == "-csv")
+                {
+                    outputGenerator = new CsvSaver();
+                }
+                else
+                {
+                    Console.WriteLine($"The argument {args[1]} cannot be parsed, did you mean -csv ?");
+                    return;
+                }
             }
             else
             {    
