@@ -20,7 +20,7 @@ namespace PrimesAppConsole
             Console.WriteLine($"The first {primeCount} primes are {primesDisplay}");
 
             // What to do with the primes though?
-
+            // Coding against an interface really is lovely.
             if(args.Length > 1 && args[1] == "-csv")
             {
                 outputGenerator = new CsvSaver();
