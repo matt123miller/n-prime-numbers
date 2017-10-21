@@ -57,5 +57,5 @@ Generating the CSV file was much quicker, taking maybe 20 seconds for a 20,000 b
  - ~Compare against the other text writing options.~ Output the StringBuilder after each line, then clear it.
  - Large grids are garbled in the terminal, so outputting to a csv file would also be great.
  - I need to make the output methods more testable
-
+ - Make a nice github pages site for this? Why not.
 
