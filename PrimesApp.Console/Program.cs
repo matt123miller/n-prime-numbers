@@ -10,19 +10,23 @@ namespace PrimesAppConsole
             int primeCount = 0;
 
             // A little sanity testing.
-            try {
-                primeCount = Int32.Parse(args[0]); 
+            try
+            {
+                primeCount = Int32.Parse(args[0]);
             }
-            catch (FormatException) {
+            catch (FormatException)
+            {
                 Console.WriteLine($"{args[0]}: Bad Format");
                 return;
-            }   
-            catch (OverflowException) {
-                Console.WriteLine($"{args[0]}: Overflow");   
+            }
+            catch (OverflowException)
+            {
+                Console.WriteLine($"{args[0]}: Overflow");
                 return;
-            }  
+            }
 
-            if(primeCount < 1){
+            if (primeCount < 1)
+            {
                 Console.WriteLine("Please enter an integer greater than 0");
                 return;
             }
@@ -38,7 +42,7 @@ namespace PrimesAppConsole
 
             // What to do with the primes though?
             // Coding against an interface really is lovely.
-            if(args.Length > 1)
+            if (args.Length > 1)
             {
                 if (args[1] == "-csv")
                 {
@@ -51,7 +55,7 @@ namespace PrimesAppConsole
                 }
             }
             else
-            {    
+            {
                 outputGenerator = new GridRender();
             }
             outputGenerator.Output(primes);

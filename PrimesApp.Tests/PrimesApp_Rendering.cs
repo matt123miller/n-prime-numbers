@@ -18,8 +18,8 @@ namespace PrimesApp.Tests
 
         [Theory]
         [InlineData(5)]
-        public void SmallGrid(int value) 
-        { 
+        public void SmallGrid(int value)
+        {
             //When
             int[] primes = _primeFinder.FindPrimes(value);
             var result = _renderer.Output(primes);
@@ -28,13 +28,13 @@ namespace PrimesApp.Tests
             Console.WriteLine(result);
             // Later validate the result against a known correct table string.
             // Assert.True(result == knownTable, $"The rendered grid and known grid match for input {values}");
-        } 
+        }
 
 
         [Theory]
         [InlineData(20)]
-        public void MediumGrid(int value) 
-        { 
+        public void MediumGrid(int value)
+        {
             //When
             int[] primes = _primeFinder.FindPrimes(value);
             var result = _renderer.Output(primes);
@@ -43,12 +43,12 @@ namespace PrimesApp.Tests
             Console.WriteLine(result);
             // Later validate the result against a known correct table string.
             // Assert.True(result == knownTable, $"The rendered grid and known grid match for input {values}");
-        } 
+        }
 
         [Theory]
         [InlineData(200)]
-        public void LargeGrid(int value) 
-        { 
+        public void LargeGrid(int value)
+        {
             //When
             int[] primes = _primeFinder.FindPrimes(value);
             var result = _renderer.Output(primes);
@@ -57,9 +57,9 @@ namespace PrimesApp.Tests
             Console.WriteLine(result);
             // Later validate the result against a known correct table string.
             // Assert.True(result == knownTable, $"The rendered grid and known grid match for input {values}");
-        } 
+        }
 
-            
+
         // [Theory]
         // [InlineData(20000)]
         // public void ProductionGrid(int value) 
@@ -73,7 +73,7 @@ namespace PrimesApp.Tests
         //     // Later validate the result against a known correct table string.
         //     // Assert.True(result == knownTable, $"The rendered grid and known grid match for input {values}");
         // } 
-        
+
         // Add some tests with purposefully failing grids.
     }
 }

@@ -1,4 +1,5 @@
-public interface IPrimeOutput {
+public interface IPrimeOutput
+{
 
-     string Output(int[] primes);
+    string Output(int[] primes);
 }

@@ -19,11 +19,12 @@ using System.Text;
 
 namespace PrimesApp.Library
 {
-    public class GridRender : IPrimeOutput {
+    public class GridRender : IPrimeOutput
+    {
 
         public GridRender()
         {
-            
+
         }
 
         // Typically I'd use a StringBuilder in C# because repeatedly appending strings 
@@ -81,6 +82,6 @@ namespace PrimesApp.Library
             return "";
         }
 
-        
+
     }
 }

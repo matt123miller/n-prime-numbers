@@ -6,11 +6,12 @@ using System.Linq;
 
 namespace PrimesApp.Library
 {
-    public class CsvSaver : IPrimeOutput{
+    public class CsvSaver : IPrimeOutput
+    {
 
         public CsvSaver()
         {
-            
+
         }
 
         public string Output(int[] primes)
@@ -34,7 +35,7 @@ namespace PrimesApp.Library
                     writer.Write($"{rowTitle},");
 
                     // I love LINQ so much.
-                    int[] multiples = primes.Select(r=> r * rowTitle).ToArray();
+                    int[] multiples = primes.Select(r => r * rowTitle).ToArray();
 
                     string row = String.Join(",", multiples);
                     writer.WriteLine(row);
