@@ -7,12 +7,12 @@ namespace PrimesApp.Tests
     public class PrimesApp_GridRender
     {
         private readonly GridRender _renderer;
-        private readonly Primes _primeFinder;
+        private readonly PrimesFinder _primeFinder;
 
         public PrimesApp_GridRender()
         {
             _renderer = new GridRender();
-            _primeFinder = new Primes();
+            _primeFinder = new PrimesFinder();
         }
 
 

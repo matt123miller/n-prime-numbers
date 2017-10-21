@@ -6,14 +6,14 @@ namespace PrimesApp.Tests
 {
     public class PrimesApp_IsPrime
     {
-        private readonly Primes _primes;
+        private readonly PrimesFinder _primes;
 
         public PrimesApp_IsPrime()
         {
             // I'm not sure if this is proper TDD practice,
             // I feel like you're meant to start fresh in every test function.
             // But I'm creating the Primes object once and reusing it.
-            _primes = new Primes();
+            _primes = new PrimesFinder();
         }
 
         [Theory]

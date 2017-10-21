@@ -32,7 +32,7 @@ namespace PrimesAppConsole
             }
 
             // The required objects
-            var primeFinder = new Primes();
+            var primeFinder = new PrimesFinder();
             IPrimeOutput outputGenerator;
 
             int[] primes = primeFinder.FindPrimes(primeCount);

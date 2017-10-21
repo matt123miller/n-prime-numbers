@@ -2,9 +2,9 @@
 
 namespace PrimesApp.Library
 {
-    public class Primes
+    public class PrimesFinder
     {
-        public Primes()
+        public PrimesFinder()
         {
 
         }
