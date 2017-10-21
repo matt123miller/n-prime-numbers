@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PrimesApp
+namespace PrimesApp.Library
 {
     public class Primes
     {

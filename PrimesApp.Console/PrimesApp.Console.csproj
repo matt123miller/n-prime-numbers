@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\PrimesApp\PrimesApp.csproj" />
+    <ProjectReference Include="..\PrimesApp.Library\PrimesApp.Library.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

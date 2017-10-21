@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimesApp.Library", "Primes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimesApp.Tests", "PrimesApp.Tests\PrimesApp.Tests.csproj", "{896B86BA-7806-4ED9-B409-8D945CA0D824}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimesAppConsole", "PrimesAppConsole\PrimesAppConsole.csproj", "{A2D9B711-B012-4978-B372-6425D31ADC0F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimesApp.Console", "PrimesApp.Console\PrimesApp.Console.csproj", "{A2D9B711-B012-4978-B372-6425D31ADC0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

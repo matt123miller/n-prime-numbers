@@ -1,4 +1,5 @@
 ﻿using System;
+using PrimesApp.Library;
 
 namespace PrimesAppConsole
 {
@@ -6,7 +7,7 @@ namespace PrimesAppConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(args[0]);
         }
     }
 }

@@ -1,5 +1,5 @@
 using Xunit;
-using PrimesApp;
+using PrimesApp.Library;
 using System;
 
 namespace PrimesApp.Tests

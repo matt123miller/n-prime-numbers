@@ -17,7 +17,7 @@ using System.Text;
 
 // | 5 | 10 | 15 | 25 |
 
-namespace PrimesApp
+namespace PrimesApp.Library
 {
     public class GridRender{
 

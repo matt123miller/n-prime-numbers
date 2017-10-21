@@ -11,6 +11,13 @@ This is a .net core project that generates and input `n` prime numbers. I'm usin
  - Open a terminal to this projects directory
  - Run `dotnet test` to validate that the tests all pass. They should!
 
+## Running the program
+
+ - Ensure your terminal is set to this project directory.
+ - Run `dotnet build`
+ - Run `dotnet run --project ./PrimesAppConsole/PrimesAppConsole.csproj NUMBER` where `NUMBER` is the amount of primes you'd like to find.
+ 
+
 ## Notes:
 
  - I remember reading about a ~~mendel sieve~~ [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) algorithm, maybe that's appropriate?
